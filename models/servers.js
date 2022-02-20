@@ -3,6 +3,13 @@ const express = require('express')
 class Server{
     constructor(){
         this.app = express()
+        //cors
+        this.app.use(cors());
+        //lectura y parseo del body
+        this.app.use(express.json());
+        //directorio publico
+        this.app.use(express.static('public'));
+        
         this.routes();
     }
     routes(){

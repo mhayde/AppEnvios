@@ -1,5 +1,5 @@
 const {request, response}=require('express')
-const GetdetallesEnvios=(req,res)=>{
+const GetdetallesEnvios=(req=request,res=response)=>{
     res.send('Get Endpoint para Detalle Envios')
 }
 const PostdetallesEnvios=(req,res)=>{
@@ -11,6 +11,7 @@ const PutdetallesEnvios=(req,res)=>{
 const DeletedetallesEnvios=(req,res)=>{
     res.send('Delete Endpoint para Detalle Envios')
 }
+
 module.exports={
     GetdetallesEnvios,
     PostdetallesEnvios,
