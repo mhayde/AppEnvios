@@ -1,11 +1,11 @@
 const{Router}=require('express');
-const { Getpaquetes } = require('../controllers/paquetes');
+const { Getpaquetes, Postpaquetes, Putpaquetes, Deletepaquetes } = require('../controllers/paquetes');
 //destructurar un objeto y solo obtener lo que ocupo de el
 const router=Router();
 //inicializo la funcion Router
 router.get('/',Getpaquetes)
-router.post('/',Getpaquetes)
-router.put('/',Getpaquetes)
-router.delete('/',Getpaquetes)
+router.post('/',Postpaquetes)
+router.put('/',Putpaquetes)
+router.delete('/',Deletepaquetes)
 
 module.exports=router
