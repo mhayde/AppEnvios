@@ -5,7 +5,7 @@ const router=Router();
 //inicializo la funcion Router
 router.get('/',Getpaquetes)
 router.post('/',Postpaquetes)
-router.put('/',Putpaquetes)
-router.delete('/',Deletepaquetes)
+router.put('/:id',Putpaquetes)
+router.delete('/:id',Deletepaquetes)
 
 module.exports=router

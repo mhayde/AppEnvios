@@ -5,8 +5,8 @@ const router=Router();
 //inicializo la funcion Router
 router.get('/',Getseguimientos)
 router.post('/',Postseguimientos)
-router.put('/',Putseguimientos)
-router.delete('/',Deleteseguimientos
+router.put('/:put',Putseguimientos)
+router.delete('/:put',Deleteseguimientos
 )
 
 module.exports=router
